@@ -41,5 +41,5 @@ import { HeroContactComponent } from './pages/dependency-injection/hero-contact/
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
+// source DI mapping: https://angular.io/guide/dependency-injection-in-action
 // source example: https://stackblitz.com/edit/angular-vnhgpq?file=src%2Fapp%2Fapp.component.html
