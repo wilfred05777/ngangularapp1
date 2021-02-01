@@ -24,6 +24,7 @@ import { HeroService } from './services/hero.service';
     PolicyComponent,
     HeroBiosComponent,
     HeroBioComponent,
+    DependencyInjectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [AuthService, HeroService, HeroCacheService],
