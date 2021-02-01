@@ -17,6 +17,8 @@ import { UserContextService } from './services/user-context.service';
 import { UserService } from './services/user.service';
 import { HeroContactComponent } from './pages/dependency-injection/hero-contact/hero-contact.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,7 @@ import { HeroContactComponent } from './pages/dependency-injection/hero-contact/
     DependencyInjectionComponent,
     HeroContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [ReactiveFormsModule, FormsModule, BrowserModule, AppRoutingModule],
   providers: [
     AuthService,
     HeroService,
