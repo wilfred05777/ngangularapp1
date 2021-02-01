@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DependencyInjectionComponent implements OnInit {
 
+  private userId: = 1;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -13,6 +13,7 @@ import { PolicyComponent } from './pages/policy/policy.component';
 import { AuthService } from './services/auth.service';
 import { HeroCacheService } from './services/hero-cache.service';
 import { HeroService } from './services/hero.service';
+import { UserContextService } from './services/user-context.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { HeroService } from './services/hero.service';
     HeroBioComponent,
     DependencyInjectionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, UserContextService],
   providers: [AuthService, HeroService, HeroCacheService],
   bootstrap: [AppComponent],
 })
