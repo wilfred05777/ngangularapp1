@@ -13,6 +13,7 @@ export class DependencyInjectionComponent implements OnInit {
   constructor(logger: LoggerService, public userContext: UserContextService) {
     //stackblitz.com/edit/angular-vnhgpq?file=src%2Fapp%2Fapp.component.ts
     // https: userContext.loadUser(this.userId);
+    userContext.loadUser(this.userId);
   }
 
   ngOnInit(): void {}

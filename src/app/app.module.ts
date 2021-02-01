@@ -14,6 +14,7 @@ import { AuthService } from './services/auth.service';
 import { HeroCacheService } from './services/hero-cache.service';
 import { HeroService } from './services/hero.service';
 import { UserContextService } from './services/user-context.service';
+import { UserService } from './services/user.service';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,16 @@ import { UserContextService } from './services/user-context.service';
     HeroBioComponent,
     DependencyInjectionComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, UserContextService],
-  providers: [AuthService, HeroService, HeroCacheService],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [
+    AuthService,
+    HeroService,
+    HeroCacheService,
+    UserContextService,
+    UserService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// source example: https://stackblitz.com/edit/angular-vnhgpq?file=src%2Fapp%2Fapp.component.html
