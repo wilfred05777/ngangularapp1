@@ -15,6 +15,7 @@ import { HeroCacheService } from './services/hero-cache.service';
 import { HeroService } from './services/hero.service';
 import { UserContextService } from './services/user-context.service';
 import { UserService } from './services/user.service';
+import { HeroContactComponent } from './pages/dependency-injection/hero-contact/hero-contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UserService } from './services/user.service';
     HeroBiosComponent,
     HeroBioComponent,
     DependencyInjectionComponent,
+    HeroContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [
