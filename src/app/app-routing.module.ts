@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DependencyInjectionComponent } from './pages/dependency-injection/dependency-injection.component';
-import { HeroBiosComponent } from './pages/hero-bios/hero-bios.component';
+import { HeroBiosComponent } from './pages/dependency-injection/hero-bios/hero-bios.component';
 
 const routes: Routes = [
   { path: '', component: HeroBiosComponent },
