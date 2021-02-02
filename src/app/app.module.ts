@@ -18,6 +18,7 @@ import { UserService } from './services/user.service';
 import { HeroContactComponent } from './pages/dependency-injection/hero-contact/hero-contact.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StoreComponent } from './pages/store/store.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeroBioComponent,
     DependencyInjectionComponent,
     HeroContactComponent,
+    StoreComponent,
   ],
   imports: [ReactiveFormsModule, FormsModule, BrowserModule, AppRoutingModule],
   providers: [
