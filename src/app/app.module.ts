@@ -23,6 +23,8 @@ import { ProductListComponent } from './pages/store/product-list/product-list.co
 import { TourOfHeroesComponent } from './pages/tour-of-heroes/tour-of-heroes.component';
 import { HeroesComponent } from './pages/tour-of-heroes/heroes/heroes.component';
 import { HeroDetailComponent } from './pages/tour-of-heroes/hero-detail/hero-detail.component';
+import { MessagesComponent } from './pages/tour-of-heroes/messages/messages.component';
+import { DashboardComponent } from './pages/tour-of-heroes/components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { HeroDetailComponent } from './pages/tour-of-heroes/hero-detail/hero-det
     TourOfHeroesComponent,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent,
   ],
   imports: [ReactiveFormsModule, FormsModule, BrowserModule, AppRoutingModule],
   providers: [
