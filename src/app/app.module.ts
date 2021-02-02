@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StoreComponent } from './pages/store/store.component';
 import { ProductListComponent } from './pages/store/product-list/product-list.component';
 import { TourOfHeroesComponent } from './pages/tour-of-heroes/tour-of-heroes.component';
+import { HeroesComponent } from './pages/tour-of-heroes/heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { TourOfHeroesComponent } from './pages/tour-of-heroes/tour-of-heroes.com
     StoreComponent,
     ProductListComponent,
     TourOfHeroesComponent,
+    HeroesComponent,
   ],
   imports: [ReactiveFormsModule, FormsModule, BrowserModule, AppRoutingModule],
   providers: [
