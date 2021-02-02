@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TourOfHeroesComponent implements OnInit {
   // https://angular.io/tutorial/toh-pt1
 
-  title = ' Tour of Heroes';
+  title = 'Tour of Heroes';
 
   constructor() {}
 
