@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tour-of-heroes.component.scss'],
 })
 export class TourOfHeroesComponent implements OnInit {
+  // https://angular.io/tutorial/toh-pt1
+
   title = ' Tour of Heroes';
 
   constructor() {}
