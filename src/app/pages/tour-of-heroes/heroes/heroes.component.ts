@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeroService } from 'src/app/services/hero.service';
 import { Hero } from './hero';
 import { HEROES } from './mockHeroes';
 
@@ -8,7 +9,8 @@ import { HEROES } from './mockHeroes';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent implements OnInit {
-  heroes = HEROES;
+  // heroes = HEROES;
+  heroes: Hero[];
   selectedHero: Hero;
 
   // hero: Hero = {
@@ -16,11 +18,22 @@ export class HeroesComponent implements OnInit {
   //   name: 'Windstorm',
   // };
 
-  constructor() {}
+  constructor(private heroService: HeroService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getHeroes();
+  }
 
   onSelect(hero: Hero) {
     this.selectedHero = hero;
+  }
+
+  // getHeroes(): void {
+  //   this.heroes = this.heroService.getAllHeroes();
+  // }
+  getHeroes(): void {
+    this.heroService
+      .getAllHeroes()
+      .subscribe((heroes) => (this.heroes = heroes));
   }
 }
