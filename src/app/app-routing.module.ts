@@ -4,13 +4,18 @@ import { DependencyInjectionComponent } from './pages/dependency-injection/depen
 import { HeroBiosComponent } from './pages/dependency-injection/hero-bios/hero-bios.component';
 import { HomeComponent } from './pages/home/home.component';
 import { StoreComponent } from './pages/store/store.component';
+import { DashboardComponent } from './pages/tour-of-heroes/components/dashboard/dashboard.component';
+import { HeroDetailComponent } from './pages/tour-of-heroes/hero-detail/hero-detail.component';
 import { TourOfHeroesComponent } from './pages/tour-of-heroes/tour-of-heroes.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  // { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'di', component: DependencyInjectionComponent },
   { path: 'store', component: StoreComponent },
   { path: 'heroes', component: TourOfHeroesComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
