@@ -19,6 +19,9 @@ import { HeroContactComponent } from './pages/dependency-injection/hero-contact/
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StoreComponent } from './pages/store/store.component';
+import { ProductListComponent } from './pages/store/product-list/product-list.component';
+import { TourOfHeroesComponent } from './pages/tour-of-heroes/tour-of-heroes.component';
+import { HeroesComponent } from './pages/TourOfHeroes/heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { StoreComponent } from './pages/store/store.component';
     DependencyInjectionComponent,
     HeroContactComponent,
     StoreComponent,
+    ProductListComponent,
+    TourOfHeroesComponent,
+    HeroesComponent,
   ],
   imports: [ReactiveFormsModule, FormsModule, BrowserModule, AppRoutingModule],
   providers: [
