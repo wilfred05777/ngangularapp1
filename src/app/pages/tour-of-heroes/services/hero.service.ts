@@ -4,11 +4,22 @@ import { Hero } from '../heroes/hero';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root',
 })
 export class HeroService {
-  constructor(private messageService: MessageService) {}
+  private heroesUrl = 'api/heroes'; //URL to we api
+
+  constructor(
+    private messageService: MessageService,
+    private http: HttpClient
+  ) {}
+
+  private log(message: string) {
+    this.messageService.add(`HeroService: ${message}`);
+  }
 
   getHeroes(): Observable<Hero[]> {
     // TODO: send the message _after_ fetching the heroes
